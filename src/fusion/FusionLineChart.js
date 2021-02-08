@@ -32,7 +32,7 @@ const FusionLineChart = () => {
   const chartConfigs = {
     type: "timeseries",
     width: "1400",
-    height: "800",
+    height: "300",
     chart: {
       theme: "fusion",
     },
@@ -40,6 +40,9 @@ const FusionLineChart = () => {
     dataSource: {
       series: "Type",
       data: new FusionCharts.DataStore().createDataTable(all, schema),
+      navigator: {
+        enabled: 0,
+      },
     },
     caption: {
       text: "Sales Analysis",

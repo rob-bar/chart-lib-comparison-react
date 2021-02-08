@@ -7,7 +7,7 @@ const ApexTreeMap = () => {
     series: dataEightHours,
     options: {
       legend: {
-        show: true,
+        // show: true,
       },
       chart: {
         height: 350,
@@ -23,8 +23,8 @@ const ApexTreeMap = () => {
       options={data.options}
       series={data.series}
       type="treemap"
-      height={350}
-      width={1000}
+      height={650}
+      width={400}
     />
   );
 };
